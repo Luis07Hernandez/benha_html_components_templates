@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+        /* ==============================
+        START - SLIDER CARDS 
+        ================================= */
+
+        .benha-slider-cards-1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .benha-slider-cards-1 .item {
+            flex: 1 1 100%;
+            margin-right: 20px;
+            border-radius: 5px;
+            padding: 24px;
+            border: 1px solid #26d07c;
+            color: black;
+            text-decoration: none;
+        }
+
+        .benha-slider-cards-1 .item:last-child {
+            margin-right: 0px;
+        }
+
+        .benha-slider-cards-1 .item:hover {
+            background-color: #26d07c;
+            color: #00534c;
+            text-decoration: none;
+        }
+
+        @media (max-width: 960px) {
+            .benha-slider-cards-1 {
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                scroll-padding: 24px;
+                margin: 0 0;
+                gap: 12px;
+                padding: 0 0 24px 0;
+            }
+
+            .benha-slider-cards-1 .item {
+                scroll-snap-align: start;
+                flex: 0 0 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ==============================
+    START - SLIDER CARDS SECTION
+    ================================= -->
+    <div class="benha-slider-cards-1">
+        <a href="https://cdc.tecmilenio.mx/busqueda?area_interes=14" class="item" target="_blank">
+            <h5 class="font-weight-bold">Skilling Center</h5>
+            <p>
+                Cientos de certificados, cursos y credenciales: desde conocimientos
+                b&aacute;sicos de software hasta programaci&oacute;n
+                avanzada.&nbsp;&nbsp;
+            </p>
+        </a>
+        <a href="https://nowisnao.com/" class="item" target="_blank">
+            <h5 class="font-weight-bold">Digital NAO</h5>
+            <p>
+                Java, Phyton, Full Stack y todas las especialidades de alta demanda en
+                el mercado laboral disponibles en nuestras trayectorias.&nbsp;
+            </p>
+        </a>
+        <a href="https://itesm.co1.qualtrics.com/jfe/form/SV_0NbIUfonN7DZKOa" class="item" target="_blank">
+            <h5 class="font-weight-bold">Diagnóstico de Competencias</h5>
+            <p>
+                Identifica tus conocimientos y habilidades digitales para encontrar el
+                programa acad&eacute;mico a tu medida.&nbsp;
+            </p>
+        </a>
+    </div>
+</body>
+
+</html>
